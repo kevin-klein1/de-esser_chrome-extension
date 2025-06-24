@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     isEQOn = !isEQOn;
 
     toggleButton.textContent = isEQOn ? "On" : "Off";
-    toggleButton.style.backgroundColor = isEQOn ? "#88E788" : "#FF474C";
+    toggleButton.style.backgroundColor = isEQOn ? "#00474c" : "#FF474C";
+    toggleButton.style.color = isEQOn ? "white" : "black";
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       chrome.scripting.executeScript({
