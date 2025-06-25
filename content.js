@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleButton.textContent = "Off";
 
   toggleButton.addEventListener("click", () => {
+
     isEQOn = !isEQOn;
 
     toggleButton.textContent = isEQOn ? "On" : "Off";
